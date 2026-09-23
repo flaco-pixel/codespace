@@ -1,0 +1,18 @@
+# INFORME DE AUDITORÍA DE SEGURIDAD - RED TEAM (JUNIOR)
+
+## 1. Resumen Ejecutivo
+- **Objetivo Evaluado:** [Ej: Sistema Web de Pruebas / IP simulada]
+- **Fecha:** [Fecha actual]
+- **Nivel de Riesgo General:** [Crítico / Alto / Medio / Bajo]
+- **Conclusión General:** El análisis evidenció fallas críticas de control de accesos y validación de entradas que permitirían a un atacante burlar la seguridad.
+
+## 2. Detalle de Hallazgos Técnicos
+
+### Vulnerabilidad 01: Inyección SQL en Autenticación
+- **Severidad:** Crítica
+- **Descripción:** El sistema concatena entradas del usuario directamente en la consulta SQL sin sanitización.
+- **Impacto:** Bypass de autenticación y acceso total a la base de datos sin credenciales válidas.
+- **Remediación (Cómo solucionarlo):** Implementar consultas parametrizadas (Prepared Statements) en el código backend.
+
+## 3. Conclusión y Próximos Pasos
+Se recomienda parchear las vulnerabilidades críticas encontradas y realizar un nuevo re-testeo en 15 días.
